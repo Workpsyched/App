@@ -1,9 +1,9 @@
 'use client'
 
 import React, { useState } from 'react'
+import Link from 'next/link'
 
 export default function HomePage() {
-  // Add state for the variables you're using
   const [showResults, setShowResults] = useState(false)
   const [score, setScore] = useState(0)
   
@@ -16,6 +16,16 @@ export default function HomePage() {
         <p className="text-gray-600 mb-8">
           Supporting healthy workplace environments through assessment and resources
         </p>
+
+        {/* Add this button */}
+        <div className="text-center mb-8">
+          <Link 
+            href="/workplace-assessment"
+            className="inline-block bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition-colors font-medium"
+          >
+            Take the Workplace Toxicity Assessment
+          </Link>
+        </div>
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-8">
           <p className="text-sm text-yellow-800">

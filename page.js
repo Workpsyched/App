@@ -1,32 +1,6 @@
-"use client";
-import React from "react";
-
-function MainComponent() {
-  const [answers, setAnswers] = useState({});
-  const [score, setScore] = useState(null);
-  const [showResults, setShowResults] = useState(false);
-
-  return (
-    <div className="min-h-screen bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-3xl mx-auto">
-        <div className="mb-8">
-          <a
-            href="/"
-            className="inline-block text-blue-600 hover:text-blue-800 mb-4"
-          >
-            <i className="fas fa-arrow-left mr-2"></i>
-            Back to Home
-          </a>
-          <div className="text-center">
-            <h1 className="text-3xl font-bold text-gray-900 mb-4 font-crimson-text">
-              Workplace Toxicity Assessment
-            </h1>
-            <p className="text-gray-600">
-              Answer these questions honestly to assess your workplace
-              environment
-            </p>
-          </div>
-        </div>
+export default function Page() {
+  return <div>Hello World</div>
+}
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-8">
           <p className="text-sm text-yellow-800">

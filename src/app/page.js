@@ -1,5 +1,12 @@
-// src/app/page.js (rename from page.jsx to page.js)
+'use client'
+
+import React, { useState } from 'react'
+
 export default function HomePage() {
+  // Add state for the variables you're using
+  const [showResults, setShowResults] = useState(false)
+  const [score, setScore] = useState(0)
+  
   return (
     <div className="min-h-screen bg-gray-50 py-8 px-4">
       <div className="max-w-3xl mx-auto">
@@ -9,10 +16,6 @@ export default function HomePage() {
         <p className="text-gray-600 mb-8">
           Supporting healthy workplace environments through assessment and resources
         </p>
-      </div>
-    </div>
-  )
-}
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-8">
           <p className="text-sm text-yellow-800">
@@ -64,7 +67,5 @@ export default function HomePage() {
         )}
       </div>
     </div>
-  );
+  )
 }
-
-export default MainComponent;
